@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Stephene Adhola">
+
+    <title>My First Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="left">
+            <section>
+                <img src="images/IMG-20250605-WA0021.jpg">
+                <h1>Hello I'm Stephene</h1>
+                <h2>Aspirirng Web Developer and Trader</h2>
+                <p>I'm a 20-year-old learner building skills in web development,trading and automotive technology.This
+                    website
+                    documents my journey and projects</p>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML & CSS (Beginner)</li>
+                    <li>Website Design</li>
+                    <li>Forex & Gold Trading (ICT/CRT)</li>
+                    <li>Automotive Fundamentals</li>
+                </ul>
+            </section>
+        </div>
+        <div class="right">
+            <section>
+                <h2>Current Focus</h2>
+                <p>
+                    I'm currently improving my web development skills,studying automotive technology and refining my
+                    trading strategy.
+                </p>
+            </section>
+            <section>
+                <h2>Future Projects</h2>
+                <p>Portfolio Upgrades,business websites and content creation.</p>
+            </section>
+            <section>
+                <h2>Projects</h2>
+                <div class="project-card" onclick="toggleProject(this)">
+                    <h3>My First Portfolio Website</h3>
+                    <p class="project-description">
+                        A personal portfolio built with HTML and CSS to document my Academic and Sports journey.
+                    </p>
+                    <video controls class="project-video">
+                        <source src="videos/portfolio.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+        function toggleProject(card) {
+            const description = card.querySelector('.project-description');
+            const video = card.querySelector('.project-video');
+            if (description.style.display === "none") {
+                description.style.display = "block";
+                video.style.display = "block";
+            } else {
+                description.style.display = "none";
+                video.style.display = "none";
+            }
+        }
+    </script>
+    <footer>
+        <p>&copy; 2026 Stephene Adhola | Portfolio</p>
+    </footer>
+</body>
+
+</html>
