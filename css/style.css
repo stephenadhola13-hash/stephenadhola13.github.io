@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+nav {
+    background-color: #222;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+h1 {
+    color: #00b
+}
+
+p {
+    line-height: 1.6;
+    color: purple
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #777;
+}
+
+section {
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.left,
+.right {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+h3 {
+    color: #666;
+    margin-top: -10px;
+}
+
+.project–card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project-description {
+    display: none;
+    margin-top: 10px;
+}
+
+.project-video {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
+}
